@@ -1,0 +1,12 @@
+eureka:
+  client:
+    # this disables the Eureka Spring Cloud discovery client
+    enabled: false
+spring:
+  cloud:
+    discovery:
+      client:
+        simple:
+          instances:
+            greeter-messages:
+            - uri: http://greeter-messages.my-apps.svc.cluster.local
